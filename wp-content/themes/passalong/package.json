@@ -1,0 +1,23 @@
+{
+  "name": "passalong-template",
+  "description": "passalong template for Wordpress!",
+  "version": "1.0.0",
+  "homepage": "http://passalong.com",
+  "author": "passalong",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "2.18.11",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-convert-encoding": "0.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.5",
+    "gulp-uglify": "^1.5.4"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

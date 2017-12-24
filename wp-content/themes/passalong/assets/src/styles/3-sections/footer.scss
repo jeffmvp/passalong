@@ -1,0 +1,233 @@
+.Footer {
+    padding: 40px 30px;
+    background: $black;
+    @include mobile {
+        padding: 30px 5px 30px;
+        text-align:center !important;
+    }
+
+    span a {
+        color: $yellow;
+        font-size: 12px;
+        font-family: $bodyFooter;
+        &:hover {
+            color:$footerLight;
+        }
+    }
+    span {
+        color: $footerDark;
+        font-size: 12px;
+        font-family: $bodyFooter;
+    }
+    p {
+        color: $footerLight;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    h6 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        margin-bottom: 20px;
+        font-weight:600;
+        color: $footerDark;
+    }
+    .menu {
+        svg {
+            fill: $teamGrey;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            position: relative;
+            top: 2px;
+            transition: .25s;
+            g,
+            path {
+                fill: $teamGrey;
+                transition: .25s;
+            }
+        }
+    }
+    .u-aR {
+        @include mobile {
+            text-align: center;
+        }
+    }
+    .Footer-logo {
+        svg {
+            max-width: 200px;
+            fill: $teamGrey !important;
+        }
+        .cls-4 {
+            fill: Transparent !important;
+        }
+        path {
+            fill: $teamGrey !important;
+        }
+        polygon {
+            fill: $teamGrey;
+        }
+        stroke {
+            fill: $teamGrey;
+        }
+    }
+    i {
+        font-size: 40px;
+        transition: .25s;
+        &:hover {
+            color: $footerLight;
+        }
+    }
+    .Footer-logo {
+        margin-bottom: 40px;
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+    .Footer-menu {
+        margin-bottom: 50px;
+        @include mobile {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 0 20px;
+                @include mobile {
+                    display: block;
+                    padding: 0;
+                }
+                &:first-child {
+                    padding-left: 0;
+                    @include mobile {
+                        padding-top: 0;
+                        margin-top: 0;
+                    }
+                }
+                a {
+                    &:hover {
+                        color: $footerLight;
+                        svg,
+                        g,
+                        path {
+                            fill: $footerLight;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Footer-sub {
+        font-size: 12px;
+        color: $teamGrey;
+        margin-top: 20px;
+        a {
+            font-size: 12px;
+            color: $teamGrey;
+            &:hover {
+                color: $footerLight;
+            }
+        }
+    }
+    .Container--footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @include mobile {
+            padding-top:0;
+            padding-bottom:0;
+        }
+    }
+    h6,
+    p {
+        font-family: $bodyFooter;
+    }
+    .Link {
+        margin-top:15px;
+        display:inline-block;
+        @include mobile {
+            margin-top:0;
+            margin-bottom:25px;
+        }
+        &:hover {
+            .LinkText {
+                background: $black;
+                color: $footerLight;
+                padding-left:25px;
+                border:1px solid $footerLight;
+            }
+            .LinkArrow {
+                border: 1px solid $footerLight;
+                background: $footerLight;
+                padding-left:15px;
+            }
+        }
+        .LinkText {
+            font-size: 15px;
+            font-family: $body;
+            padding: 6px 25px;
+            text-transform: uppercase;
+            border: 1px solid $yellow;
+            border-radius: 7px 0 0 7px;
+            letter-spacing: .5px;
+            color: $yellow;
+            font-variant: small-caps;
+            transition: 0.225s;
+            &:before {
+                content:none;
+            }
+        }
+        .LinkArrow {
+            font-size: 15px;
+            font-family: $body;
+            border-radius: 0 7px 7px 0;
+            padding: 6px 15px;
+            background: $yellow;
+            border: 1px solid $yellow;
+            color: $black;
+            transition: 0.225s;
+        }
+    }
+    .fa-layers {
+        font-size:2em;
+        svg {
+            transition: .225s;
+        }
+        svg:first-child {
+            color:$footerDark;
+        }
+        svg:last-child {
+            color:$black;
+        }
+        &:hover {
+            svg:first-child {
+                color:$footerLight;
+            }
+            svg:last-child {
+                color:$black;
+            }
+        }
+    }
+    .Social {
+        margin-right:5px;
+        text-align:right;
+        
+        &:last-of-type {
+            margin-right:0 !important;
+        }
+    }
+    .Social-wrapper {
+        postion:relative;
+        display:inline-block;
+        margin-right:-10px;
+        margin-bottom:10px;
+        &.u-mobile {
+            margin-bottom:20px;
+        }
+        
+    }
+    
+}

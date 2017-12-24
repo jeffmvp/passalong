@@ -1,0 +1,6 @@
+.SubHeader {
+    background:$black;
+    @include mobile {
+        display:none;
+    }
+}

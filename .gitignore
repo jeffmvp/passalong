@@ -1,0 +1,16 @@
+*.log
+.htaccess
+.DS_Store
+wp-config.php
+
+
+/readme.html
+/license.txt
+/wp-content/uploads/*
+/node_modules/*
+*/node_modules/*
+/node_modules/
+/wp-content/themes/penfund/node_modules/*
+
+node_modules
+node_modules/

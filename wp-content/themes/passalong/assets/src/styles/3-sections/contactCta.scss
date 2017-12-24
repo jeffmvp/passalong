@@ -1,0 +1,78 @@
+.ContactCta {
+    padding-top:80px;
+    padding-bottom:80px;
+    background:$squareGrey;
+    h5 {
+        @include mobile {
+            margin-bottom:60px;
+        }
+    }
+    .grid--carousel {
+        @include mobile {
+            overflow:visible;
+        }
+    }
+    .Container {
+        @include mobile {
+            overflow:visible;
+        }
+    }
+    .ContactCta-card {
+        padding:25px;
+        background:$squareGrey;
+        width:100%;
+        text-align:center;
+        margin-top:60px;
+        transition:.225s;
+        margin-bottom:10px;
+        &:hover {
+            .ContactCta-icon {
+                box-shadow: 0 1px 15px rgba(0,0,0,.4);
+            }
+            box-shadow: 0 1px 15px rgba(0,0,0,.4);
+            @include mobile {
+                .ContactCta-icon {
+                    box-shadow: 0 1px 15px rgba(0,0,0,0);
+                }
+                box-shadow: 0 1px 15px rgba(0,0,0,0);
+            }
+        }
+
+        @include mobile {
+            margin-top:0;
+            margin-bottom:0;
+            margin-right:0;
+            margin-left:0;
+            h5 {
+                margin-bottom:0;
+            }
+        }
+    }
+    .grid__col--1-of-3 {
+        @include mobile {
+            width:100%;
+        }
+    }
+    .ContactCta-icon {
+        width:120px;
+        height:120px;
+        background:$red;
+        border-radius:50%;
+        margin: 0 auto;
+        display:table;
+        text-align:Center;
+        transition:.225s;
+        margin-bottom:50px;
+        @include mobile {
+            margin-bottom:25px;
+        }
+        .ContactCta-icon-wrap {
+            display:table-cell;
+            vertical-align:middle;
+           
+        }
+    }
+    .ContactCta-hero {
+        margin-bottom:60px;
+    }
+}

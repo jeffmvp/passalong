@@ -1,0 +1,58 @@
+.Link {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    &:hover {
+        .LinkText {
+            // background:$absoluteBlack;
+            color: $white;
+            &:before {
+                left:0;
+            }
+        } // .LinkArrow {
+        //     padding-left:10px;
+        // }
+    }
+    .LinkText {
+        font-size: 15px;
+        font-family: $body;
+        padding: 6px 25px;
+        text-transform: uppercase;
+        border: 1px solid $absoluteBlack;
+        border-radius: 7px 0 0 7px;
+        letter-spacing: .5px;
+        color: $absoluteBlack;
+        font-variant: small-caps;
+        transition: 0.225s;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 10;
+        &:before {
+            content: '';
+            background: $absoluteBlack;
+            width: 100%;
+            height: 200px;
+            left: -300px;
+            top: 0;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            transition:.35s;
+        }
+    }
+    .LinkArrow {
+        font-size: 15px;
+        font-family: $body;
+        border-radius: 0 7px 7px 0;
+        padding: 6px 15px;
+        background: $absoluteBlack;
+        border: 1px solid $absoluteBlack;
+        color: $white;
+        transition: 0.125s;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,36 @@
+.Single {
+    padding:65px 0;
+    @include mobile {
+        padding:40px 0;
+    }
+    .Button {
+        margin-top:50px;
+    }
+    .Single-side {
+        text-align:left;
+        .Button {
+            display:none;
+            @include mobile {
+                display:inline-block;
+            }
+        }
+    }
+    .Single-member {
+        margin-top:20px;
+    }
+    
+    .Single-team {
+        h4,a {
+            font-size:12px;
+            font-family:$heading;
+            letter-spacing:0;
+            text-transform:uppercase;
+            display:block;
+            line-height:1.5;
+            margin-bottom:0;
+        }
+        a {
+            color:$blue;
+        }
+    }
+}

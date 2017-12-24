@@ -1,0 +1,6 @@
+.Main {
+    padding-top:161px;
+    @include mobile {
+        padding-top:60px;
+    }
+}

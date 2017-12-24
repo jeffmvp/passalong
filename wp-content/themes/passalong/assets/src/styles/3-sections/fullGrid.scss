@@ -1,0 +1,45 @@
+.FullGrid {
+    .FullGrid-content {
+        background:$squareGrey;
+        display:table;
+        text-align:center;
+        width:100%;
+        direction:ltr;
+    }
+    .FullGrid-wrap {
+        display:table-cell;
+        vertical-align: middle;
+        padding:100px;
+        @include mobile {
+            padding:35px 25px 35px;
+        }
+        p:last-child {
+            margin-bottom:0;
+            padding-bottom:0;
+        }
+    }
+   
+    .FullGrid-video {
+        iframe {
+            width:100%;
+            height:100%;
+            padding:20px;
+            @include mobile {
+                padding:10px;
+            }
+        }
+        background:$squareGrey;
+        @include mobile {
+            height:320px;
+            background:$footerLight;
+        }
+    }
+    .FullGrid-image {
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        @include mobile {
+            height:320px;
+        }
+    }
+}

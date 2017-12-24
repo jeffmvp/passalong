@@ -1,0 +1,190 @@
+h1,
+.h1 {
+    font-size: 63px;
+    line-height: 1;
+    font-family: $heading;
+    color: $absoluteBlack;
+    font-weight: 400;
+    text-transform:uppercase;
+    margin-bottom:25px;
+    @include mobile {
+        font-size:40px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    font-family: $heading;
+    color: $absoluteBlack;
+    font-weight: 400;
+    margin-bottom:20px;
+    @include mobile {
+        font-size:32px;
+        line-height:1;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 48px;
+    font-style:italic;
+    line-height: 1;
+    font-family: $body;
+    color: $absoluteBlack;
+    font-weight:400;
+    margin-bottom:55px;
+    @include mobile {
+        font-size:24px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: $body;
+    color: $absoluteBlack;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:400;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: $body;
+    color: $absoluteBlack;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+h6,
+.h6 {
+    font-size: 15px;
+    line-height: 1.2;
+    font-family: $heading;
+    color: $absoluteBlack;
+}
+
+div {
+    font-family: $body;
+    color: $absoluteBlack;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: $body;
+    color: $absoluteBlack;
+}
+
+a {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: $body;
+    text-decoration: none;
+    color: $red;
+    transition: .25s;
+    &:hover {
+        text-decoration: none;
+        color: lighten($red, 25%);
+    }
+}
+
+ol,
+ul {
+    font-family: $body;
+    line-height: auto;
+    color: $absoluteBlack;
+    
+}
+.Main {
+    li {
+        padding-top:10px;
+        &:first-child {
+            padding-top:0;
+        }
+    }
+}
+
+.wf-loading {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul,
+    a,
+    span,
+    div {
+        visibility: hidden;
+    }
+}
+
+* {
+    font-variant-ligatures: none;
+}
+select {
+    background: transparent;
+    border: none;
+    width:220px;
+    max-width:100%;
+    border:1px solid $white;
+    -webkit-appearance:none;
+    border-radius:0;
+    padding:15px 30px;
+    cursor:pointer;
+    text-transform:uppercase;
+    font-family:$heading;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing:1px;
+    transition:.25s;
+    &:hover {
+        opacity:.5;
+    }
+    option {
+        letter-spacing:0;
+    }
+}
+
+button {
+    display:inline-block;
+    -webkit-appearance:none;
+    background:transparent;
+    border:none;
+    font-size:12px;
+    letter-spacing:1px;
+    font-family:$heading;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:$blue;
+    transition:.25s;
+    border-bottom:4px solid transparent;
+    &:focus {
+        outline:0;
+    }
+    &:hover {
+        cursor:pointer;
+        color:$teamGrey;
+        border-color:$blue;
+    }
+    &.mixitup-control-active {
+        cursor:pointer;
+        color:$teamGrey;
+        border-color:$blue;
+    }
+
+}
+
+.Divider {
+    border-top:2px solid $absoluteBlack;
+    margin-top:50px;
+    margin-bottom:50px;
+}
