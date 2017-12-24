@@ -4,8 +4,8 @@
     position:relative;
     overflow:hidden;
     width:100%;
-    height:600px;
-    padding:150px;
+    height:500px;
+    padding:100px;
     @include mobile {
         min-height:240px;
     }
@@ -37,6 +37,11 @@
         color:$white;
         font-style:normal;
         margin-top:30px;
+    }
+    h1 {
+        font-size:60px;
+        color:$white;
+        font-style:normal;
     }
     
     

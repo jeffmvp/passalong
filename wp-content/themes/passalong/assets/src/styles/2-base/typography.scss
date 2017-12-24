@@ -7,6 +7,7 @@ h1,
     font-weight: 400;
     text-transform:uppercase;
     margin-bottom:25px;
+    letter-spacing:2px;
     @include mobile {
         font-size:40px;
     }
@@ -29,9 +30,8 @@ h2,
 h3,
 .h3 {
     font-size: 48px;
-    font-style:italic;
     line-height: 1;
-    font-family: $body;
+    font-family: $heading;
     color: $purple;
     font-weight:400;
     margin-bottom:55px;
@@ -42,12 +42,10 @@ h3,
 
 h4,
 .h4 {
-    font-size: 16px;
+    font-size: 28px;
     line-height: 1.2;
-    font-family: $body;
+    font-family: $heading;
     color: $purple;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     font-weight:400;
 }
 
@@ -55,7 +53,7 @@ h5,
 .h5 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: $body;
+    font-family: $heading;
     color: $purple;
     font-weight:600;
     margin-bottom:15px;
@@ -99,6 +97,7 @@ ul {
     font-family: $body;
     line-height: auto;
     color: $black;
+    padding-top:20px;
     
 }
 .Main {

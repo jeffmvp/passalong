@@ -24,19 +24,18 @@
 
 @mixin buttonBg($bg) {
     background: transparent;
-    font-size:12px;
+    font-size:18px;
     text-align:center;
     margin:20px auto 0;
     max-width:250px;
     color:$bg;
     padding:15px 35px;
     display:inline-block;
-    letter-spacing:1px;
     transition:.25s;
     border:2px solid $bg;
-    font-family:$heading;
+    font-family:$body;
     font-weight:bold;
-    border-radius:50px;
+    text-transform:capitalize;
     &:hover {
       background:$bg;
       transition: all 0.3s ease;

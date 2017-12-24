@@ -1,6 +1,6 @@
 //Utility Objects
 .Container {
-    max-width: 1460px;
+    max-width: 1260px;
     padding: 0 30px;
     margin: 0 auto;
     overflow:hidden;
@@ -10,12 +10,14 @@
     &.Container--large {
         max-width: 1660px;
     }
+    &.Container--small {
+        max-width:960px;
+    }
 }
 
 
 .Button {
     @include buttonBg($green);
-    text-transform: uppercase;
     min-width: 220px;
     
     @include mobile {
@@ -27,9 +29,10 @@
             color: $green;
         }
     }
-    &.Button--invertedgreen {
-        @include buttonBg($green);
-        color: $green !important;
+    &.Button--orange {
+        @include buttonBg($orange);
+        color: $orange !important;
+        margin-left:20px;
         &:hover {
             color: $white !important;
         }

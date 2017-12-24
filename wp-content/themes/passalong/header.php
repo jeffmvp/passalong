@@ -14,6 +14,11 @@
 $logo = get_field('logo', 'options');
 $logoInverted = get_field('logo_inverted', 'options');
 
+$params = array(
+    'menu' => 'Main'
+);
+
+
 
 ?>
 
@@ -43,15 +48,13 @@ $logoInverted = get_field('logo_inverted', 'options');
 	<nav class="Header">
 		<div class="Container">
 			<div class="grid">
-				<div class="grid__col grid__col--1-of-4 u-aL Header-logo">
+				<div class="grid__col grid__col--1-of-4 u-aL">
 					<a href="/">
 						<img class="Header-logo" src="<?php echo $logo ?>">
 					</a>
 				</div>
 				<div class="grid__col grid__col--3-of-4 u-aR">
-					<div class="Header-hamburger">
-						<i class="Header-bars"></i>
-					</div>
+					<?php wp_nav_menu($params); ?>
 				</div>
 			</div>
 		</div>

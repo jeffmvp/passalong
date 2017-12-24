@@ -4,13 +4,40 @@
     left: 0;
     width: 100%;
     z-index: 2000;
-    background:$white;
-    transition:.5s;
-    opacity:1;
-    overflow:hidden;
+    background: $white;
+    transition: .5s;
+    opacity: 1;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     .Header-logo {
-        max-width:200px;
-        padding-top:15px;
-        padding-bottom:15px;
+        max-width: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .menu {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin-top: 40px;
+            &:last-child {
+                a {
+                    padding-right: 0;
+                }
+            }
+            &.current_page_item {
+                a {
+                    opacity: .65;
+                }
+            }
+            a {
+                font-family: $heading;
+                font-size: 24px;
+                color: $green;
+                padding: 0 20px;
+                &:hover {
+                    opacity: .65;
+                }
+            }
+        }
     }
 }
