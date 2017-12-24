@@ -4,238 +4,40 @@
     position:relative;
     overflow:hidden;
     width:100%;
+    height:600px;
+    padding:150px;
     @include mobile {
         min-height:240px;
     }
-    .HeroVideo {
-    }
-    .Container {
-        position:relative;
-        z-index:10;
-
-    }
-    .Hero-image {
-        margin-bottom:25px;
-        max-width: 581px;
+    &:before {
         width:100%;
-    }
-    .Hero-push {
-        margin-top:30px;
-        display:inline-block;
-        cursor:pointer;
-        &:hover {
-            opacity:.5;
-            .Hero-push-arrow {
-                top:5px;
-            }
-        }
-        .Hero-push-text {
-            font-family:$heading;
-            font-size:24px;
-            display:inline-block;
-            transition:.225s;
-        }
-        .Hero-push-arrow {
-            font-family:$heading;
-            font-size:24px;
-            display:inline-block;
-            transition:.225s;
-            top:0;
-            position:relative;
-            margin-top:10px;
-            img {
-                max-width:25px;
-            }
-        }
-    }
-    .Hero-arrow {
-        height: 50px;
-        width: 50px;
-        box-shadow: 0 0 0 2px $blue inset;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 30px;
-        z-index: 2;
-        left: 50%;
-        margin: 0 auto;
-        transform: translateX(-25px);
-        transition: 0.25s ease-in-out;
-        cursor:pointer;
-        z-index:1000;
-        overflow:hidden;
-        @include mobile {
-            height: 40px;
-            width: 40px;
-            &:before, &:after {
-                top:25px !important;
-                left:8px !important;
-            }
-        }
-        &:before, &:after {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 2px;
-            background: $blue;
-            transform-origin: right;
-            top: 30px;
-            z-index:1000;
-            transition:.25s ease-in;
-        }
-        &:before {
-            transform: rotate(45deg);
-            left: 13px;
-        }
-        &:after {
-            transform: rotate(-225deg);
-            left:13px;
-        }
-        &:hover {
-            border-color:$blue;
-            &:before, &:after {
-                background:$white;
-            }
-            .Hero-bubble {
-                bottom:0;
-            }
-        }
-        .Hero-bubble {
-            background:$blue;
-            width:50px;
-            height:50px;
-            display:block;
-            position:absolute;
-            border-radius:50%;
-            bottom:-41px;
-            
-            transition:.25s ease-in;
-            @include mobile {
-                width:40px;
-                height:40px;
-                bottom:-32px;
-            }
-        }
-    }
-    &.Hero--single {
-        h1 {
-            font-size:48px;
-            @include mobile {
-                font-size:34px;
-            }
-        }
-        @include mobile {
-            .Button {
-                display:none;
-            }
-            .Hero-content {
-                position:relative;
-                bottom:auto;
-                padding-top:45px;
-            }
-            
-        }
-    }
-    // &.Hero--home {
-    //     min-height: 700px;
-    //     position:relative;
-    //     .grid__col--2-of-3 {
-    //         width:80%;
-    //         @include mobile {
-    //             width:500px;
-    //         }
-    //         @include tablet {
-    //             width:100%;
-    //         }
-    //     }
-    //     @include mobile {
-    //         min-height:420px;
-    //     }
-    //     .Hero-content {
-    //         position: relative;
-    //         left: 0;
-    //         width: 100%;
-    //         top: 240px;
-    //         @include mobile {
-    //             top: 110px;
-    //         }
-    //     }
-    // }
-    .Hero-content {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: 110px;
-        top: auto;
-        
-        @include mobile {
-            bottom:20px;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        * {
-            color:$white !important
-        }
-    }
-    &.Hero--contact {
-        @include mobile {
-            min-height:440px;
-        }
-        .Hero-content {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            bottom: 50px;
-            top: auto;
-            h1 {
-                margin-bottom: 20px;
-            }
-            p,a {
-                @include mobile {
-                    font-size:22px;
-                }
-            }
-            .Hero-address {
-                @include mobile {
-                    margin-top:20px;
-                }
-            }
-        }
-    }
-    
-    p,
-    a {
-        font-size: 18px;
-        font-family: $body;
-        font-weight: 400;
-        line-height: 1.5;
-       
-    }
-    p {
-        max-width:870px;
-        margin-left:auto;
-        margin-right:auto;
-        font-size:24px;
-        @include mobile {
-            font-size:20px;
-        }
-        &:last-child {
-            margin-bottom:0;
-        }
-    }
-    .Button {
-        margin-bottom: 60px;
-        margin-top: 0;
-        i {
-            transition:.25s;
-        }
-        &:hover {
-            i {
-                color:$darkGrey;
-            }
-        }
+        height:100%;
+        background:$absoluteBlack;
+        opacity:.75;
+        left:0;
+        top:0;
+        content:'';
+        position:absolute;
     }
     * {
-        color:$black !important;
+        position:relative;
+        z-index:10;
     }
+    .Container {
+        display:table;
+        width:100%;
+        height:100%;
+        .grid {
+            display:table-cell;
+            vertical-align:middle;
+        }
+    }
+    h3 {
+        font-size:28px;
+        color:$white;
+        font-style:normal;
+        margin-top:30px;
+    }
+    
+    
 }

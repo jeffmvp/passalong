@@ -3,7 +3,7 @@ h1,
     font-size: 63px;
     line-height: 1;
     font-family: $heading;
-    color: $absoluteBlack;
+    color: $purple;
     font-weight: 400;
     text-transform:uppercase;
     margin-bottom:25px;
@@ -17,7 +17,7 @@ h2,
     font-size: 48px;
     line-height: 1.1;
     font-family: $heading;
-    color: $absoluteBlack;
+    color: $purple;
     font-weight: 400;
     margin-bottom:20px;
     @include mobile {
@@ -32,7 +32,7 @@ h3,
     font-style:italic;
     line-height: 1;
     font-family: $body;
-    color: $absoluteBlack;
+    color: $purple;
     font-weight:400;
     margin-bottom:55px;
     @include mobile {
@@ -45,7 +45,7 @@ h4,
     font-size: 16px;
     line-height: 1.2;
     font-family: $body;
-    color: $absoluteBlack;
+    color: $purple;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:400;
@@ -56,7 +56,7 @@ h5,
     font-size: 18px;
     line-height: 1.2;
     font-family: $body;
-    color: $absoluteBlack;
+    color: $purple;
     font-weight:600;
     margin-bottom:15px;
 }
@@ -66,19 +66,19 @@ h6,
     font-size: 15px;
     line-height: 1.2;
     font-family: $heading;
-    color: $absoluteBlack;
+    color: $purple;
 }
 
 div {
     font-family: $body;
-    color: $absoluteBlack;
+    color: $black;
 }
 
 p {
     font-size: 18px;
     line-height: 1.5;
     font-family: $body;
-    color: $absoluteBlack;
+    color: $black;
 }
 
 a {
@@ -86,11 +86,11 @@ a {
     line-height: 1.5;
     font-family: $body;
     text-decoration: none;
-    color: $red;
+    color: $purple;
     transition: .25s;
     &:hover {
         text-decoration: none;
-        color: lighten($red, 25%);
+        color: lighten($purple, 25%);
     }
 }
 
@@ -98,7 +98,7 @@ ol,
 ul {
     font-family: $body;
     line-height: auto;
-    color: $absoluteBlack;
+    color: $black;
     
 }
 .Main {
@@ -164,7 +164,7 @@ button {
     font-family:$heading;
     font-weight:bold;
     text-transform:uppercase;
-    color:$blue;
+    color:$green;
     transition:.25s;
     border-bottom:4px solid transparent;
     &:focus {
@@ -172,19 +172,19 @@ button {
     }
     &:hover {
         cursor:pointer;
-        color:$teamGrey;
-        border-color:$blue;
+        color:$white;
+        border-color:$green;
     }
     &.mixitup-control-active {
         cursor:pointer;
-        color:$teamGrey;
-        border-color:$blue;
+        color:$white;
+        border-color:$green;
     }
 
 }
 
 .Divider {
-    border-top:2px solid $absoluteBlack;
+    border-top:2px solid $black;
     margin-top:50px;
     margin-bottom:50px;
 }

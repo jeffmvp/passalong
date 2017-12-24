@@ -1,6 +1,6 @@
 //Utility Objects
 .Container {
-    max-width: 1260px;
+    max-width: 1460px;
     padding: 0 30px;
     margin: 0 auto;
     overflow:hidden;
@@ -8,118 +8,13 @@
         padding:0 20px;
     }
     &.Container--large {
-        max-width: 1400px;
+        max-width: 1660px;
     }
-    &.Container--overflow {
-        overflow:visible;
-    }
-    &.Container--hero {
-       padding:115px 115px 60px;
-       text-align:center;
-       
-    }
-    &.Container--content {
-        padding-top:50px;
-        padding-bottom:50px;
-        text-align:center;
-        max-width:900px;
-    }
-    &.Container--small {
-        padding:90px 115px 90px;
-        text-align:center;
-        @include mobile {
-            padding:30px 20px;
-        }
-        
-     }
-    &.Container--hr {
-        max-width: 1200px;
-        border-top:1px solid $footerDark;
-        padding-bottom:15px;
-    }
-    &.Container--heading {
-        padding-top:55px;
-        padding-bottom:55px;
-        text-align:center;
-    }
-}
-.loadmore-button {
-    margin-top:40px !important;
-    display:block;
-    &.is-disabled {
-        opacity:.25;
-        &:hover {
-            background:$white;
-            color:$blue;
-            border-color:$blue;
-            cursor:not-allowed;
-        }
-        
-    }
-}
-.Arrow {
-    position: relative;
-    display: inline-block;
-    padding: 8px 0;
-    left: 10px;
-    width:35px;
-    &.Arrow--small {
-        transform:scale(.75,.75);
-    }
-    &:before {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color: $white;
-        position:absolute;
-        top: calc(50% + 2px);
-        transition: width 0.5s ease-out;
-    }
-    &:after {
-        content: "";
-        display: block;
-        width: 10px;
-        height: 10px;
-        border-top: 2px solid $white;
-        border-right: 2px solid $white;
-        transform: rotate(45deg);
-        top: calc(50% - 2px);
-        position: absolute;
-        transition: 0.5s ease-out;
-        left:20px;
-        
-    }
-    // &:hover {
-    //     cursor: pointer;
-    //     &:before {
-    //         width: 80px;
-    //     }
-    // }
 }
 
-.u-arrowLink {
-    position: relative;
-    display:block;
-    transition:.25s opacity, .55s left;
-    left:0;
-    &:hover {
-        left: 10px !important;
-        cursor: pointer;
-        opacity:.6;
-        .Arrow {
-            &:before {
-                width: 40px;
-            }
-            &:after {
-                left:30px;
-            }
-        }
-    }
-}
 
 .Button {
-    @include buttonBg($blue);
+    @include buttonBg($green);
     text-transform: uppercase;
     min-width: 220px;
     
@@ -129,22 +24,22 @@
     &.Button--inverted {
         @include buttonBg($white);
         &:hover {
-            color: $blue;
+            color: $green;
         }
     }
-    &.Button--invertedBlue {
-        @include buttonBg($blue);
-        color: $blue !important;
+    &.Button--invertedgreen {
+        @include buttonBg($green);
+        color: $green !important;
         &:hover {
             color: $white !important;
         }
     }
     &.Button--solid {
-        @include buttonBg($blue);
-        background: $blue;
+        @include buttonBg($green);
+        background: $green;
         color: $white;
         &:hover {
-            color: $blue;
+            color: $green;
             background: $white;
         }
     }
@@ -262,8 +157,8 @@ html {
             opacity:.25;
             &:hover {
                 background:$white;
-                color:$blue;
-                border-color:$blue;
+                color:$green;
+                border-color:$green;
                 cursor:not-allowed;
             }
         }
@@ -290,14 +185,4 @@ html {
             }
         }
     }
-}
-
-.u-bgRed {
-    background:$red;
-}
-.u-bgGrey {
-    background:$squareGrey;
-}
-.u-bgWhite {
-    background:$white;
 }
